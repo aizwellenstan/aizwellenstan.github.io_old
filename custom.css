@@ -1,0 +1,630 @@
+@charset "utf-8";
+
+
+/*----------------------------------------------------------------------------------------
+　フォント
+----------------------------------------------------------------------------------------*/
+abbr {
+	font-size: 70%;
+	letter-spacing: 0.1em;
+}
+.s_txt {
+	font-size:140%;
+	border-bottom: 2px dotted #FF8888;
+	font-weight:bold;
+	color:#555;
+}
+/*---文字太さ---*/
+.fw_b {
+	font-weight:bold;
+}
+.fw_n {
+	font-weight:normal;
+}
+/*---文字色---*/
+	
+.ftcl_01 {
+	color:#C00;
+	font-weight:bold;
+}
+.ftcl_02 {
+	color:#d2f7fe;
+}
+.ftcl_03 {
+	color:#cc3300;
+}
+.ftcl_04 {
+	color:#bc7272;
+}
+.ftcl_05 {
+	color:#558121;
+}
+.ftcl_06 {
+	font-size:120%;
+	border-bottom:1px dashed #536728;
+}
+.ftcl_07 {
+	color:#FFF;
+}
+
+.red{
+	color:#c22500;
+	}
+
+/*---背景色---*/
+
+.bg_black{
+	background:#000;
+}
+.bg_01 {
+	background:#eaeaea;
+}
+.bg_herf {
+	background:#612E2D;
+	padding-left: 5px;
+	width: 400px
+}
+
+
+
+
+/*---ボーダー---*/
+.bo_01 {
+	border:3px solid #ebe1c7;
+}
+.bo_02 {
+	border:1px solid #0000CC;
+}
+iframe.bo_01 {
+	border:1px solid #fff !important;
+	padding:0 !important;
+}
+.bo_b01 {
+	border-bottom:1px solid #cccccc;
+}
+.bo_r01 {
+	border-right:1px solid #cccccc;
+}
+.bo_t02 {
+	border-top:1px dashed #FFF;
+	padding-bottom:20px;
+}
+
+.bo_b02 {
+	border-bottom:1px dashed #cccccc;
+}
+.bo_none{
+	border-bottom:none !important;
+	} 
+.bo_b03 {
+	border-bottom:1px dashed #ec79a2;
+	padding-bottom:10px;
+}
+
+.bo_b04 {
+	border-top:1px dashed #FFF;
+	padding:24px 0 10px 0;
+}
+
+.bo_b05{
+	border-top:1px dashed #CCC;
+	margin:24px 0 10px 0;
+}
+
+.bo_b06{
+	width:800px;
+	border-top:1px dashed #CCC;
+	padding:0 30px; 
+	margin:24px auto;
+}
+
+.line1{
+	border-bottom:1px solid #e3e3e3;
+	margin:80px 0 90px 0;
+}
+.line2{
+	border-bottom:1px solid #e86594;
+	margin:40px 0 50px 0;
+}
+
+/*----------------------------------------------------------------------------------------
+　フロート
+----------------------------------------------------------------------------------------*/
+.float_limg0 {
+	float:left;
+	margin-right:5px;
+	_margin-right:5px;
+	margin-bottom:5px;
+}
+.float_limg1 {
+	float:left;
+	margin-right:15px;
+	_margin-right:15px;
+	margin-bottom:15px;
+}
+.float_rimg1 {
+	float:right;
+	margin-left:15px;
+	_margin-left:15px;
+	margin-bottom:15px;
+}
+.float_limg2 {
+	float:left;
+	margin-right:50px;
+	_margin-right:50px;
+	margin-bottom:15px;
+}
+.float_rimg {
+	float:right;
+	margin-left:10px;
+	margin-bottom:5px;
+}
+.float_limgb {
+	float:left;
+	margin-right:15px;
+	margin-bottom:15px;
+	border:1px solid #edeae5;
+}
+.float_rimgb {
+	float:right;
+	margin-left:15px;
+	margin-bottom:15px;
+	border: 1px solid #edeae5;
+}
+.imgbo {
+	padding: 3px;
+	border: 1px solid #c6c6c6;
+}
+.imglink {
+	border:3px solid #ebddbd;
+}
+img {
+}
+.float_l {
+	float:left;
+}
+.float_r {
+	float:right;
+}
+.clear {
+	clear:both;
+}
+.tripartite {
+	float: left;
+	margin-right: 21px;
+	_margin-right: 18px;
+}
+.clear {
+	clear:both;
+}
+.both_line {
+	border-top:1px dotted #999999;
+	clear:both;
+	height:1px;
+	margin:10px 0;
+}
+ul.box5 {
+	margin:10px 0;
+}
+ul.box5 li {
+	float:left;
+	text-align:center;
+	width:20%;
+	margin-bottom:8px;
+}
+.ovhid{
+overflow: hidden;
+}
+.dsNone{
+	display:none;
+	}
+
+.po_relative{
+	position:relative;
+	}
+
+
+/*----------------------------------------------------------------------------------------
+　テーブル
+----------------------------------------------------------------------------------------*/
+
+.bc_coll {
+	border-collapse:collapse;
+}
+.bc_sepa {
+	border-collapse:separate;
+}
+.nowrap {
+	white-space:nowrap;
+}
+
+/*----------------------------------------------------------------------------------------
+　テキスト
+----------------------------------------------------------------------------------------*/
+
+/*---位置---*/
+.txta_c {
+	text-align:center;
+}
+.txta_l {
+	text-align:left !important;
+}
+.txta_r {
+	text-align:right
+}
+/*---装飾---*/
+.txtd_u {
+	text-decoration:underline;
+}
+.txtd_none {
+	text-decoration:none;
+}
+/*---サイズ---*/
+.text9 {
+	font-size:65% !important;
+}
+.text10 {
+	font-size:77% !important;
+}
+.text11 {
+	font-size:85% !important;
+}
+.text12 {
+	font-size:93% !important;
+}
+.text13 {
+	font-size:100%;
+}
+.text14 {
+	font-size:108%;
+}
+.text15 {
+	font-size:116%;
+}
+.text16 {
+	font-size:123.1% !important;
+}
+.text17 {
+	font-size:131%;
+}
+.text18 {
+	font-size:138.5%;
+}
+.text19 {
+	font-size:146.5%;
+}
+.text20 {
+	font-size:180%;
+}
+/*----------------------------------------------------------------------------------------
+　マージン
+----------------------------------------------------------------------------------------*/
+
+.mgn_5 {
+	margin:5px;
+}
+.mgn_10 {
+	margin:10px;
+}
+.mgn_15 {
+	margin:15px;
+}
+.mgn_t5 {
+	margin-top:5px;
+}
+.mgn_t10 {
+	margin-top:10px;
+}
+.mgn_t15 {
+	margin-top:15px;
+}
+.mgn_t20 {
+	margin-top:20px !important;
+}
+.mgn_t30 {
+	margin-top:30px !important;
+}
+.mgn_t35 {
+	margin-top:35px !important;
+}
+.mgn_t50 {
+	margin-top:50px !important;
+}
+.mgn_t150 {
+	margin-top:150px !important;
+}
+.mgn_b5 {
+	margin-bottom:5px;
+}
+.mgn_b10 {
+	margin-bottom:10px;
+}
+.mgn_b15 {
+	margin-bottom:15px;
+}
+.mgn_b20 {
+	margin-bottom:20px !important;
+}
+.mgn_b50 {
+	margin-bottom:50px !important;
+}
+.mgn_b40 {
+	margin-bottom:40px !important;
+}
+.mgn_l05 {
+	margin-left:5px;
+}
+.mgn_l10 {
+	margin-left:10px;
+}
+.mgn_l15 {
+	margin-left:15px;
+}
+.mgn_l20 {
+	margin-left:20px;
+}
+.mgn_l30 {
+	margin-left:30px;
+}
+.mgn_l50 {
+	margin-left:50px;
+}
+.mgn_l80 {
+	margin-left:80px;
+}
+.mgn_l100 {
+	margin-left:100px;
+}
+.mgn_l115 {
+	margin-left:115px;
+}
+.mgn_l249 {
+	margin-left:260px;
+}
+.mgn_r05 {
+	margin-right:5px;
+}
+.mgn_r03 {
+	margin-right:3px;
+}
+.mgn_r10 {
+	margin-right:10px;
+}
+.mgn_r15 {
+	margin-right:15px;
+}
+.mgn_r20 {
+	margin-right:20px !important;
+}
+.mgn_r40 {
+	margin-right:40px;
+}
+.mgn_r50 {
+	margin-right:50px;
+}
+
+.mgn_tb {
+	margin: 30px 0 10px;
+}
+/*----------------------------------------------------------------------------------------
+　パディング
+----------------------------------------------------------------------------------------*/
+
+
+.pdg_0 {
+	padding:0 !important;
+}
+.pdg_5 {
+	padding:5px;
+}
+.pdg_10 {
+	padding:10px;
+}
+.pdg_15 {
+	padding:15px;
+}
+.pdg_25 {
+	padding:25px;
+}
+.pdg_t5 {
+	padding-top:5px;
+}
+.pdg_t10 {
+	padding-top:10px;
+}
+.pdg_t15 {
+	padding-top:15px;
+}
+.pdg_t20 {
+	padding-top:20px;
+}
+.pdg_t70 {
+	padding-top:70px;
+}
+.pdg_b10 {
+	padding-bottom:10px;
+}
+.pdg_b15 {
+	padding-bottom:15px;
+}
+.pdg_b20 {
+	padding-bottom:20px;
+}
+.pdg_b50 {
+	padding-bottom:50px;
+}
+.pdg_l10 {
+	padding-left:10px;
+}
+.pdg_l15 {
+	padding-left:15px;
+}
+.pdg_l20 {
+	padding-left:20px;
+}
+.pdg_l50 {
+	padding-left:50px;
+}
+.pdg_r10 {
+	padding-right:10px;
+}
+.pdg_r15 {
+	padding-right:15px;
+}
+.pdg_r20 {
+	padding-right:20px;
+}
+p.line2 {
+	line-height:2.7 !important;
+}
+/*----------------------------------------------------------------------------------------
+　横幅
+----------------------------------------------------------------------------------------*/
+
+.w_5 {
+	width:5%;
+}
+.w_7 {
+	width:7%;
+}
+.w_10 {
+	width:10%;
+}
+.w_15 {
+	width:15%;
+}
+.w_20 {
+	width:20%;
+}
+.w_25 {
+	width:25%;
+}
+.w_30 {
+	width:30%;
+}
+.w_32 {
+	width:32%;
+}
+.w_33 {
+	width:33%;
+}
+.w_36 {
+	width:36%;
+}
+.w_40 {
+	width:39.5%;
+}
+.w_45 {
+	width:45%;
+}
+.w_48 {
+	width:48%;
+}
+.w_50 {
+	width:49.55%;
+}
+.w_55 {
+	width:55%;
+}
+.w_57 {
+	width:57%;
+}
+.w_60 {
+	width:60%;
+}
+.w_65 {
+	width:64%;
+}
+.w_67 {
+	width:67%;
+}
+.w_70 {
+	width:68%;
+}
+.w_75 {
+	width:73%;
+}
+.w_80 {
+	width:78%;
+}
+.w_85 {
+	width:85%;
+}
+.w_90 {
+	width:90%;
+}
+.w_95 {
+	width:95%;
+}
+.w_100 {
+	width:100%;
+}
+.w_700 {
+	width:705px;
+
+}
+.w_210 {
+	width:210px;
+
+}
+.w_180 {
+	width:180px;
+}
+.w_190 {
+	width:190px;
+}
+.w_140 {
+	width:140px !important;
+}
+.w_all {
+	width:100%;
+}
+.h_125 {
+	height:125px;
+	_height:135px;
+}
+.h_135 {
+	height:135px;
+	_height:145px;
+}
+.h_145 {
+	height:145px;
+	_height:155px;
+}
+.h20{
+	height:20px;
+	}
+.lineh125 {
+	line-height:1.25;
+}
+.w212{
+	width:212px;
+	}
+.clbox {
+	clear:both;
+	padding:8px 0;
+}
+
+
+.roll a:hover img {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter: "alpha(opacity=50)";
+}
+
+
+
+.rollHi a:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -ms-filter: "alpha(opacity=40)";
+}
+
+
+/* Finalize
+----------------------------------------------------*/
+
+
+.cf:before,.cf:after {content:"";display:table;}
+.cf:after {clear:both;}
+.cf {*zoom:1;}

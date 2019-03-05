@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=w"width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>開発日記</title>
+</head>
+<body>
+    <div>
+        <h3>開発日記</h3>
+        <h4>npm install onseui error</h4>
+            <ul><p>npm install onsenui@2.0.4</p></ul>
+        <h4>cordova jdk failed</h4>
+            <ul><p>npm install --global cordova@nightly</p></ul>
+        <h4>mongo db js</h4>
+            <ul>
+                <pre>
+//mongodbを接続する
+
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
+
+// mlab URLを接続する const url = 'mongodb://アカウント:パスワード.......';
+const url = mongodb://<dbuser>:<dbpassword>@xxxxxxxx.mlab.com:xxxxx/<dbname></dbname>
+// del <>....
+
+// DBの名前
+const dbName = 'your project';
+
+//main--
+//mlab mongoDB serverを接続する
+MongoClient.connect(url, function(err, client) {
+  assert.equal(null, err);
+  
+  //この行に注意を払ってください、最後の接続は成功なら、cmdモードは出力します
+  console.log("セーバーに正常に接続しました");  
+
+  const db = client.db(dbName);
+
+  client.close();
+});
+                </pre>
+                <ul>
+                    <h4>could not find module 'mongodb'</h4>
+                        <ul>$ npm install mongodb --save</ul>
+                </ul>
+            </ul>
+    </div>
+    <ul>
+        <h4>add document to mongo by nodejs</h4>
+            <pre>
+                    const MongoClient = require('mongodb').MongoClient;
+                    const assert = require('assert');
+                    
+                    
+                    // Connection URL---
+                    //local const url = 'mongodb://localhost:27017';
+                    const url = 'mongodb://aizwellenstan:Wing860816@ds040309.mlab.com:40309/raphtalia_mongo';
+                    // Database Name---
+                    const dbName = 'rapthtalia_mongo';
+                    
+                    //2.insertDocuments
+                    const insertDocuments = function(db, callback) {
+                        // Get the documents collection
+                        const collection = db.collection('raphtalia');
+                        // Insert some documents  
+                        collection.insertMany([
+                            {Shion : 1}, {mea : 2}, {minatouaqua : 3}, {neru : 4}, {Himawari : 5}
+                        ], 
+                        function(err, result) {
+                            assert.equal(err, null);
+                            assert.equal(5, result.result.n); //比較結果がnストロークか
+                            assert.equal(5, result.ops.length);  //比較結果がnストロークか
+                            console.log(result.result.n +"ドキュメント追加しました");
+                            callback(result);
+                        });
+                    }
+                    
+                    
+                    //main
+                    MongoClient.connect(url, function(err, client) {
+                        assert.equal(null, err);
+                        console.log("セーバーに正常に接続しました");
+                    
+                        const db = client.db(dbName);
+                        //operations--
+                        //Insert some documents
+                        insertDocuments(db, function() {
+                            client.close();
+                        });
+                    
+                    });
+    </pre>
+    </ul>
+    
+    <h4>express</h4>
+    <pre>
+        npm install express-generator -g
+    </pre>
+
+    <h4>Ionic tutorial starter</h4>
+    <pre>
+        ionic start MyIonicProject tutorial --type=ionic-angular
+
+        //start server
+        ionic serve -l
+    </pre>
+
+    <h3>git</h3>
+    <pre>
+        //delete .git
+        rm -rf .git
+    </pre>
+</body>
+</html>
