@@ -8,14 +8,23 @@
 </head>
 <body>
     <div>
-        <h3>開発日記</h3>
-        <h4>npm install onseui error</h4>
-            <ul><p>npm install onsenui@2.0.4</p></ul>
-        <h4>cordova jdk failed</h4>
-            <ul><p>npm install --global cordova@nightly</p></ul>
-        <h4>mongo db js</h4>
-            <ul>
-                <pre>
+<h3>開発日記</h3>
+
+<h3>VS Code Extentions</h3>
+<pre>
+    Material Icon Theme
+    Bracket Pair Colorizer 
+</pre>
+
+<h4><a href="rails.html">Rails</a></h4>
+
+<h4>npm install onseui error</h4>
+<pre>$npm install onsenui@2.0.4</pre>
+<h4>cordova jdk failed</h4>
+<pre>$npm install --global cordova@nightly</pre>
+<h4>mongo db js</h4>
+
+<pre>
 //mongodbを接続する
 
 const MongoClient = require('mongodb').MongoClient;
@@ -56,7 +65,7 @@ MongoClient.connect(url, function(err, client) {
                     
                     // Connection URL---
                     //local const url = 'mongodb://localhost:27017';
-                    const url = 'mongodb://aizwellenstan:Wing860816@ds040309.mlab.com:40309/raphtalia_mongo';
+                    const url = 'mongodb://aizwellenstan:pwd@ds040309.mlab.com:40309/raphtalia_mongo';
                     // Database Name---
                     const dbName = 'rapthtalia_mongo';
                     
@@ -107,10 +116,159 @@ MongoClient.connect(url, function(err, client) {
         ionic serve -l
     </pre>
 
-    <h3>git</h3>
+    <h4>git</h4>
     <pre>
         //delete .git
         rm -rf .git
+    </pre>
+
+    <h4>PHP Laravel</h4>
+    <pre>
+        //create porject
+        $ composer create-project --prefer-dist laravel/laravel app
+
+        //install composer
+        $ composer install
+
+        //serve
+        $ php artisan serve
+
+        //Controller
+        $ php artisan make:controller AboutController
+
+        //Sidebar
+        $ php artisan create_sidebar_table
+    </pre>
+
+    <h4>Git</h4>
+    Command line instructions
+    <br>
+    login
+    <pre>
+        git config --global user.email "aizwellenstan@gmail.com"
+        git config --global user.name "aizwellenstan"
+    </pre>
+    <pre>
+        git init
+        git add .
+        git commit -m""
+        git remote add origin URL
+        git push -u origin master
+    </pre>
+    unset
+    <pre>
+        git config --global --unset user.name
+        git config --global --unset user.email
+        git config --global --unset credential.helper
+    </pre>
+
+    <h4>ASP.NET Core</h4>
+    <pre>
+        $ dotnet new web
+
+        start server 
+        $ dotnet run
+        
+    </pre>
+
+    <h4>ASP.NET identityserver</h4>
+        <a href="https://github.com/aizwellenstan/asp.net_angular_ISH4">https://github.com/aizwellenstan/asp.net_angular_ISH4</a>
+
+    <h4>PHP</h4>
+    getip
+    <pre>
+        if(!empty($_SERVER['HTTP_CLIENT_IP'])){
+            $myip = $_SERVER['HTTP_CLIENT_IP'];
+         }else if(!empty($_SERVER['HTTP_X_FORWARDED_FOR'])){
+            $myip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+         }else{
+            $myip= $_SERVER['REMOTE_ADDR'];
+         }
+         echo $myip;
+    </pre>
+
+    geturl
+    <pre>
+        $myurl="$_SERVER[HTTP_HOST]";
+        $myurl2="http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    </pre>
+
+    
+    <h4>Postgres(linux)</h4>
+    <pre>
+        $sudo su
+        $su postgres
+        $psql
+
+        \l     --list all database watch all database
+        \c xxx --move to xxx database
+        \d     --watch all tables
+
+        $create database [database];
+        $create user [username] with password'[pwd]';
+        $grant all privileges on database [database] to [username];
+        $\q
+    </pre>
+
+    <h4>mysql</h4>
+    <pre>
+        $mysql -u root -p
+        $use [database]          --move to database
+        $show tables;
+        $select * from [tables]; --watch [tables] all tables
+        $delete from;            --delete all data
+    </pre>
+
+    <h4>Angular</h4>
+    <pre>
+        $npm install -g @angular/cli
+    </pre>
+
+    <h4>linux command</h4>
+    <pre>
+        $:/     --search
+    </pre>
+
+    <h4>PHP</h4>
+    <pre>
+        //change memory
+        ini_set('memory_limit','256M');
+    </pre>
+
+    <h4>AJAX API</h4>
+    <script src="https://gist.github.com/aizwellenstan/25ef4af17c1456b492875883bdf4f974.js"></script>
+
+    <h4>js prvent SpecificKey</h4>
+    <pre>
+        function showKeyPress(evt) {
+            evt = (evt) ? evt : window.event
+            return checkSpecificKey(evt.keyCode);
+            }
+            function checkSpecificKey(keyCode) {
+            var specialKey = "[`~!#$^&*()=|{}':;',\\[\\].<>/?~！#￥……&*（）——|{}【】‘；：”“'。，、？]‘'";//Specific Key list
+            var realkey = String.fromCharCode(keyCode);
+            var flg = false;
+            flg = (specialKey.indexOf(realkey) >= 0);
+            if (flg) {
+            // alert('請勿輸入特殊字元: '   realkey);
+            return false;
+            }
+            return true;
+            }
+            document.onkeypress = showKeyPress;
+    </pre>
+
+    <h4>js print</h4>
+    <script src="https://gist.github.com/aizwellenstan/33212bc559edadfe5a914ecf8264161b.js"></script>
+
+    <h4>ASP.NET Core MVC</h4>
+    <pre>
+        //package manager console
+        $install-package Microsoft.NETCore.App -Version 1.0.4
+
+        //package manager console
+        $add-migration ""
+
     </pre>
 </body>
 </html>
