@@ -7,21 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h4>Install Rails</h4>
+    <h4><a href="https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-ubuntu-12-04-lts-precise-pangolin-with-rvm">Install Rails</a></h4>
     <pre>
-    rbenv
-    https://dev.classmethod.jp/server-side/language/build-ruby-environment-by-rbenv/
+    $sudo apt-get update
+    $sudo apt-get install curl
+    $\curl -L https://get.rvm.io | bash -s stable
+    $source ~/.rvm/scripts/rvm
+    $rvm requirements
+    $rvm install ruby
+    $rvm use ruby --default
+    $rvm rubygems current
+    $gem install rails
 
-    $rbenv install 2.4.2
-
-
-    $gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-    $curl -sSL https://get.rvm.io | bash -s stable --ruby
-    $source /usr/local/rvm/scripts/rvm
-    open a new terminal
-    $rvm get stable --autolibs=enable
-    $rvm install ruby-2.4.2
-    $curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
     $sudo apt-get install -y nodejs
 
     <a href="https://www.howtoforge.com/tutorial/ruby-on-rails-ror-with-postgresql-on-ubuntu-16-04/">https://www.howtoforge.com/tutorial/ruby-on-rails-ror-with-postgresql-on-ubuntu-16-04/</a>
