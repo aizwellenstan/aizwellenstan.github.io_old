@@ -20,7 +20,7 @@
     $gem install rails
 
     $sudo apt-get install -y nodejs
-    $sudo apt-get install libmysqlclient-dev
+    $sudo apt-get install mysql-server
 
     <a href="https://www.howtoforge.com/tutorial/ruby-on-rails-ror-with-postgresql-on-ubuntu-16-04/">https://www.howtoforge.com/tutorial/ruby-on-rails-ror-with-postgresql-on-ubuntu-16-04/</a>
 
@@ -59,10 +59,17 @@
         <h4>bundler downgrade</h4>
         <p>$gem install bundler --version '< 2.0.0'</p>
 
+    <h4>Git undo</h4>
+    <pre>
+        $git log
+        $git revert <commit hash>
+    </pre>
+
     <h4>Rails command</h4>
     <pre>
-        $rails generate scaffold product \ title:string description:text image_url:string
+        $rails generate scaffold product \title:string description:text image_url:string
     </pre>
+
 
 </body>
 </html>
