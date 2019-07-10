@@ -203,7 +203,10 @@ MongoClient.connect(url, function(err, client) {
 
         \l     --list all database watch all database
         \c xxx --move to xxx database
-        \d     --watch all tables
+        \dt    --watch all tables
+        \d     --desc tables
+
+        $dorp table if exists "" cascade; --drop table
 
         $create database [database];
         $create user [username] with password'[pwd]';
@@ -218,6 +221,13 @@ MongoClient.connect(url, function(err, client) {
         $show tables;
         $select * from [tables]; --watch [tables] all tables
         $delete from;            --delete all data
+        $desc tablename;         --describe table
+
+        backup
+        mysqldump -u root -p dbname > dump.sql;
+
+        restore
+        mysqldump -u root -p dbname < dump.sql
     </pre>
 
     <h4>Angular</h4>
@@ -228,6 +238,9 @@ MongoClient.connect(url, function(err, client) {
     <h4>linux command</h4>
     <pre>
         $:/     --search
+        $ sudo rm -rf /var/
+
+        $:q     --exit vim
     </pre>
 
     <h4>PHP</h4>
@@ -279,6 +292,34 @@ MongoClient.connect(url, function(err, client) {
 
         add source
         $software-properties-gtk
+    </pre>
+
+    <h4>Git clone fatal: protocol 'https' is not supported</h4>
+    <p>1.find libcurl-4.dll in git's install folder and move away
+        2.restart git bash and clone again
+        3.move back the file
+        4.restart git bash and clone
+    </p>
+
+    <h4>Heroku</h4>
+    <pre>
+        $heroku login
+        $heroku create
+        $git push heroku master
+        $heroku run rails db:migrate
+    </pre>
+
+    <h4>git change heroku remote</h4>
+    <pre>
+        $git remote -v
+        > origin https://github.com/xxx.git (fetch)
+        > origin https://github.com/xxx.git (push)
+        > heroku https://git.heroku.com/xxx.git (fetch)
+        > heroku https://git.heroku.com/xxx.git (push)
+
+        $git remote rm heroku
+        $git remote add heroku https://git.heroku.com/ooo.git
+        $git push -u heroku master
     </pre>
 </body>
 </html>
